@@ -1,0 +1,229 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E8F9FF;
+    color: black;
+    margin: 0;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+
+.btn-hobbies, .btn-interests {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: #FBFBFB;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+    min-width: 150px;
+}
+
+.btn-hobbies:hover, .btn-interests:hover {
+    background-color: #C5BAFF;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FBFBFB;
+}
+
+#biotitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: Georgia, serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #CBE7F1;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    background: #E8F9FF;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #C5BAFF;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    background: #CBE7F1;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 14px;
+    color: black;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #C5BAFF;
+    color: black;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.container {
+    max-width: 1600px;
+    padding: 20px;
+    background-color: #CBE7F1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: justify;
+    margin-top: 20px;
+}
+
+h1, h3 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 2.5em;
+    color: black;
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+.skillspic, .hobbiespic, .interestspic {
+    float: right;
+    width: 220px;
+    height: 250px;
+    padding: 20px;
+}
+
+
+.footer-nav {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #CBE7F1;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.footer-nav a {
+    text-align: right;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: #C4D9FF;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-nav a:hover {
+    background-color: #C5BAFF;
+}
+
+
+.btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #C4D9FF;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-top:hover {
+    background-color: #C5BAFF;
+}
